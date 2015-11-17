@@ -1,5 +1,30 @@
-<ion-view title="home">
-    <ion-content padding="'true'" class="has-header">
-        <h1>Home Page</h1>
+<ion-view title="Home">
+    <ion-content padding="'true'" class="has-header" ng-controller="SpatialSQLCtrl">
+        <h1>Online SQL interpreter</h1>
+
+        <main>
+            <label for='commands'>Enter some SQL</label>
+            <br>
+
+            <ui-codemirror id="commands" class="pageContentInput" ui-codemirror-opts="editorOptions">
+                <input type='text' ng-model="sql"></input>
+            </ui-codemirror>
+            <!--<textarea id="commands">SELECT room_number, AsGeoJSON(Transform(geometry, 4326)) AS geojson FROM room;</textarea>-->
+            <br>
+            <button ng-click="clickHandler(sql)"; class="button button-positive" id="execute">
+                Execute
+            </button>
+
+            <div id="error" class="error"></div>
+
+            <br>
+            <h3>SQL Results</h3>
+            <ui-codemirror class="pageContentInput" ui-codemirror-opts="editorOptions" ng-model="value">
+                <div class="card">
+                <div class="item item-text-wrap">
+                    {{value}}
+                </div>
+            </div></ui-codemirror>
+        </main>
     </ion-content>
 </ion-view>
