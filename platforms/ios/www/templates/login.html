@@ -1,0 +1,47 @@
+<ion-header-bar class="bar-positive">
+    <div class="buttons">
+        <button class="button button-icon button-clear ion-ios-arrow-back" class="button-clear" ng-click="myGoBack()">
+            Back
+        </button>
+    </div>
+    <h1 class="title">Login</h1>
+</ion-header-bar>
+
+
+<ion-view class="login-view" title="Login">
+
+    <ion-content scroll="false" has-header="true" padding="true">
+        <div class="row">
+            <div class="col col-bottom">
+                <div class="card login-container">
+                    <form name="login_form" class="" novalidate>
+                        <div class="list">
+                            <label class="item item-input">
+                                <input type="email" placeholder="Email" name="user_email" ng-model="user.username" required>
+                            </label>
+                            <label class="item item-input">
+                                <input type="password" placeholder="Password" name="user_password" ng-model="user.password" required show-hide>
+                            </label>
+                        </div>
+                        <div class="item item-body bottom-content">
+
+                            <button type="submit" class="button button-positive button-block" ng-click="login()">
+                                Log In
+                            </button>
+                            <div class="assertive" ng-show="error.message">{{error.message}}</div>
+                        </div>
+                    </form>
+                </div>
+                <div class="alternative-actions">
+                    <button class="forgot-password button button-small button-clear button-light" ng-click="forgot()">
+                        Forgot Password?
+                    </button>
+                    <button class="sign-up button button-small button-clear button-light" ng-click="register()">
+                        Sign Up
+                    </button>
+                </div>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>
+
