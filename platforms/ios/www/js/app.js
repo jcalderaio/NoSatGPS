@@ -14,9 +14,9 @@ angular.module('NoSatGPS', [ 'ionic', 'NoSatGPS.routes', 'NoSatGPS.controllers']
 
 
 
-            ////you can delete starting from here
+            //you can delete starting from here
             //var sql = window.SQL;   //This invokes the spatiasql.js. You may have to keep this in here.
-            //$rootScope.db = new sql.Database();   //Use $rootScope to make global variables. "db" is now a variable of $rootScope
+            //$rootScope.db = new sql.Database('../db/CISE_Building_FifthFLoor.sqlite');   //Use $rootScope to make global variables. "db" is now a variable of $rootScope
             //var sqlstr = "CREATE TABLE IF NOT EXISTS people (id integer primary key, firstname text, lastname text)";
             //
             //try {

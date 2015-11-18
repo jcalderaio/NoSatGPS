@@ -2,7 +2,7 @@ angular.module('NoSatGPS.controllers')
 
     .controller('SpatialSQLController', function($scope) {
         var xhr = new XMLHttpRequest();
-        xhr.open('GET', '../db/CISE_Building_FifthFLoor.sqlite', true);
+        xhr.open('GET', '../www/db/CISE_Building_FifthFLoor.sqlite', true);
         xhr.responseType = 'arraybuffer';
         $scope.value = '';
         $scope.model = '';
@@ -11,7 +11,7 @@ angular.module('NoSatGPS.controllers')
 
             var uInt8Array = new Uint8Array(this.response);
 
-            var db = new SQL.Database(uInt8Array);
+            var db = new SQL.Database(uIngt8Array);
 
             $scope.clickHandler = function(model) {
 
