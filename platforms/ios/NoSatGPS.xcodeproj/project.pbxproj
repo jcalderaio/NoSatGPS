@@ -39,8 +39,8 @@
 		7E7966E61810823500FA85AD /* icon-small.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7966DC1810823500FA85AD /* icon-small.png */; };
 		7E7966E71810823500FA85AD /* icon-small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7966DD1810823500FA85AD /* icon-small@2x.png */; };
 		D4A0D8761607E02300AEF8BB /* Default-568h@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = D4A0D8751607E02300AEF8BB /* Default-568h@2x~iphone.png */; };
-		C43E0F689BFE4E81A979A7E5 /* IonicKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = D33C26372B6C452FAD5AFF51 /* IonicKeyboard.m */; };
-		B37DF7B06C6E4D348AA59ED9 /* UIWebViewExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F60BB2C4374257BB360515 /* UIWebViewExtension.m */; };
+		310002457F2E43C6B5678800 /* IonicKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D5C5F710A934EE1901ADF38 /* IonicKeyboard.m */; };
+		AF1D2B2343AD4839930217F5 /* UIWebViewExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 15BBCFE45C9840508CA894C9 /* UIWebViewExtension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,10 +106,10 @@
 		EB87FDF31871DA8E0020F90C /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; name = www; path = ../../www; sourceTree = "<group>"; };
 		EB87FDF41871DAF40020F90C /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = ../../config.xml; sourceTree = "<group>"; };
 		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = "NoSatGPS/config.xml"; sourceTree = "<group>"; };
-		D33C26372B6C452FAD5AFF51 /* IonicKeyboard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "IonicKeyboard.m"; path = "com.ionic.keyboard/IonicKeyboard.m"; sourceTree = "<group>"; fileEncoding = 4; };
-		07F60BB2C4374257BB360515 /* UIWebViewExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "UIWebViewExtension.m"; path = "com.ionic.keyboard/UIWebViewExtension.m"; sourceTree = "<group>"; fileEncoding = 4; };
-		CD2F38AC1154478694BA327F /* IonicKeyboard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "IonicKeyboard.h"; path = "com.ionic.keyboard/IonicKeyboard.h"; sourceTree = "<group>"; fileEncoding = 4; };
-		680714FF91F745E6B716768F /* UIWebViewExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "UIWebViewExtension.h"; path = "com.ionic.keyboard/UIWebViewExtension.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		6D5C5F710A934EE1901ADF38 /* IonicKeyboard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "IonicKeyboard.m"; path = "com.ionic.keyboard/IonicKeyboard.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		15BBCFE45C9840508CA894C9 /* UIWebViewExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "UIWebViewExtension.m"; path = "com.ionic.keyboard/UIWebViewExtension.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		0B00612481174D0FB7114B14 /* IonicKeyboard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "IonicKeyboard.h"; path = "com.ionic.keyboard/IonicKeyboard.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		1721FE0CF4A246A7B7E0B516 /* UIWebViewExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "UIWebViewExtension.h"; path = "com.ionic.keyboard/UIWebViewExtension.h"; sourceTree = "<group>"; fileEncoding = 4; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,10 +208,10 @@
 		307C750510C5A3420062BCA9 /* Plugins */ = {
 			isa = PBXGroup;
 			children = (
-				D33C26372B6C452FAD5AFF51 /* IonicKeyboard.m */,
-				07F60BB2C4374257BB360515 /* UIWebViewExtension.m */,
-				CD2F38AC1154478694BA327F /* IonicKeyboard.h */,
-				680714FF91F745E6B716768F /* UIWebViewExtension.h */,
+				6D5C5F710A934EE1901ADF38 /* IonicKeyboard.m */,
+				15BBCFE45C9840508CA894C9 /* UIWebViewExtension.m */,
+				0B00612481174D0FB7114B14 /* IonicKeyboard.h */,
+				1721FE0CF4A246A7B7E0B516 /* UIWebViewExtension.h */,
 			);
 			name = Plugins;
 			path = "NoSatGPS/Plugins";
@@ -396,8 +396,8 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
-				C43E0F689BFE4E81A979A7E5 /* IonicKeyboard.m in Sources */,
-				B37DF7B06C6E4D348AA59ED9 /* UIWebViewExtension.m in Sources */,
+				310002457F2E43C6B5678800 /* IonicKeyboard.m in Sources */,
+				AF1D2B2343AD4839930217F5 /* UIWebViewExtension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

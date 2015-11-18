@@ -1,6 +1,6 @@
 {
   "name": "NoSatGPS",
-  "app_id": "98ed103a",
+  "app_id": "b09924a5",
   "gulpStartupTasks": [
     "sass",
     "watch"

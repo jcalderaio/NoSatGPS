@@ -11,7 +11,7 @@ angular.module('NoSatGPS.controllers')
 
             var uInt8Array = new Uint8Array(this.response);
 
-            var db = new SQL.Database(uIngt8Array);
+            var db = new SQL.Database(uInt8Array);
 
             $scope.clickHandler = function(model) {
 
