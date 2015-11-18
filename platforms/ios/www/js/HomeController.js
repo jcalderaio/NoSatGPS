@@ -8,21 +8,23 @@ angular.module('NoSatGPS.controllers')
 
         if (!$rootScope.isLoggedIn) {
             $state.go('welcome');
-        }            
+        }
 
+        function loadBinaryFile(path,success) {
+            var xhr = new XMLHttpRequest();
+            xhr.open("GET", path, true);
+            xhr.responseType = "arraybuffer";
+            xhr.onload = function() {
+                var data = new Uint8Array(xhr.response);
+                var arr = new Array();
+                for(var i = 0; i != data.length; ++i) arr[i] = String.fromCharCode(data[i]);
+                success(arr.join(""));
+            };
+            xhr.send();
+        }
 
-
-        var xhr = new XMLHttpRequest();
-        xhr.open('GET', '../www/db/CISE_Building_FifthFloor.sqlite', true);
-        xhr.responseType = 'arraybuffer';
-        $scope.value = '';
-        $scope.model = '';
-
-        xhr.onload = function(e) {
-
-            var uInt8Array = new Uint8Array(this.response);
-
-            var db = new SQL.Database(uInt8Array);
+        loadBinaryFile('../www/db/CISE_Building_FifthFloor.sqlite', function(data){
+            var db = new SQL.Database(data);
 
             $scope.clickHandler = function(model) {
 
@@ -37,10 +39,9 @@ angular.module('NoSatGPS.controllers')
 
                 console.log('I am about to print the SQL output');
 
-                $scope.value = angular.toJson(db.exec(model));
+                var res = db.exec(model);
+
+                $scope.value = JSON.stringify(res);
             }
-        };
-
-        xhr.send();
-
+        });
     });
