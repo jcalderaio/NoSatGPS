@@ -6,6 +6,10 @@ angular.module('NoSatGPS.controllers')
             $ionicNavBarDelegate.title(title);
         };
 
+        $scope.clear = function() {
+            $scope.value = "";
+        }
+
         if (!$rootScope.isLoggedIn) {
             $state.go('welcome');
         }

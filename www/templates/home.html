@@ -2,23 +2,30 @@
     <ion-content padding="'true'" class="has-header">
         
 
-        <h1>Online SQL interpreter</h1>
-
+        <h3 style="text-align :center">Spatial SQL Interpreter</h3>
+        <br><br>
         <main>
-            <label>Enter some SQL</label>
+            <h4>Enter some SQL</h4>
+
+
+            <label class="item item-input item-stacked-label">
+                <input type="text" ng-model="sql">
+            </label>
             <br>
 
-            <input type='text' ng-model="sql"></input>
             <!--<textarea id="commands">SELECT room_number, AsGeoJSON(Transform(geometry, 4326)) AS geojson FROM room;</textarea>-->
-            <br>
-            <button ng-click="clickHandler(sql)"; class="button button-positive" id="execute">
-                Execute
-            </button>
+
+            <div class="button-bar bar-positive">
+                <a class="button" ng-click="clickHandler(sql)" id="execute">Execute</a>
+
+                <a class="button" ng-click="clear()">Clear</a>
+            </div>
+
 
             <div id="error" class="error"></div>
 
             <br>
-            <h3>SQL Results</h3>
+            <h4>SQL Results</h4>
             <div class="card">
                 <div class="item item-text-wrap">
                     {{value}}
