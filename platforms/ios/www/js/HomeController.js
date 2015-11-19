@@ -8,6 +8,7 @@ angular.module('NoSatGPS.controllers')
 
         $scope.clear = function() {
             $scope.value = "";
+            $('#rando').val("");
         }
 
         if (!$rootScope.isLoggedIn) {
